@@ -45,3 +45,7 @@ test("test with hooks 1", async ({ page }) => {
 test("Google Launch", async ({ page }) => {
   await page.goto("https://www.google.com/");
 });
+
+test("Trendnologies Launch", async ({ page }) => {
+  await page.goto("https://trendnologies.com/");
+});
