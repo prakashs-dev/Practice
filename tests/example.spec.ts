@@ -1,6 +1,5 @@
 import { test, expect } from "@playwright/test";
 
-
 // test("has title", async ({ page }) => {
 //   await page.goto("https://letcode.in/home");
 
@@ -41,4 +40,8 @@ test("test with hooks 1", async ({ page }) => {
   await page.fill("input[id='loginpassword']", "jiouser");
   await page.click("//button[text()='Log in']");
   await page.click("//a[@id='logout2']");
+});
+
+test("Google Launch", async ({ page }) => {
+  await page.goto("https://www.google.com/");
 });
