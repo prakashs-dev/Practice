@@ -40,12 +40,17 @@ test("test with hooks 1", async ({ page }) => {
   await page.fill("input[id='loginpassword']", "jiouser");
   await page.click("//button[text()='Log in']");
   await page.click("//a[@id='logout2']");
+  await page.waitForTimeout(2000);
 });
 
 test("Google Launch", async ({ page }) => {
+  await page.waitForTimeout(2000);
   await page.goto("https://www.google.com/");
+  await page.waitForTimeout(2000);
 });
 
 test("Trendnologies Launch", async ({ page }) => {
+  await page.waitForTimeout(2000);
   await page.goto("https://trendnologies.com/");
+  await page.waitForTimeout(2000);
 });
